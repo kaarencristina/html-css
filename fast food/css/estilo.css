@@ -1,0 +1,228 @@
+
+ 	*{ /* asterisco serve para aplicar pra todos */
+ 	margin: 0;
+ 	border: 0;
+ 	padding: 0;
+
+ 	}
+
+ 	html{
+ 		font-family: arial;
+ 		font-size: 62.5%;  /*esse tamanho seria 10px*/
+ 		scroll-behavior:smooth; /*comportamento do scroll mouse*/
+ 	}
+
+	header{
+		background: linear-gradient(to top,#ffffffff,#ff0000);
+		color: #ffff;
+		font-size: 1.8rem;
+		padding: 1rem;
+		padding-top: 2rem;
+		position: fixed;
+		width: 100%;
+	
+	}
+
+	footer{
+		background: linear-gradient(to bottom, #ffffff,#ff0000);
+		color: #000000;
+		font-size: 1.8rem;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.conteudo{
+		font-size: 1.6rem;
+		background-color: #FFF;
+		padding: 1.5rem;
+		text-align: justify;
+		margin: 0 auto;  /*adapta as margens automaticamente*/
+		max-width:1024px; /*largura max de que o conteudo ocupa a tela*/
+
+	}
+
+	.conteudo-topo{
+		font-size: 1.6rem;
+		background-color: #FFF;
+		padding: 1.5rem;
+		text-align: justify;
+		margin: 0 auto;  /*adapta as margens automaticamente*/
+		max-width:1024px; /*largura max de que o conteudo ocupa a tela*/
+		padding-top:32rem;
+
+	}
+
+	h1{
+		font-size:2rem;
+		text-align: center;
+		text-shadow: 1px 1px 1px #000000;
+		color: rgb(255,0,0);
+
+	}
+	h2{
+		font-size: 1.9rem;
+	}
+	h3{
+
+		font-size: 1.7rem; 
+
+	}
+	h4{
+		font-size: 1.6rem;
+	}
+
+	h5 {
+
+		font-size: 3rem;
+		color: rgb(255,0,0);
+		text-shadow: 1px 1px 1px #000000;
+		text-align: center;
+
+	}
+
+	figure{
+	text-align: center;
+	}
+	.imagens-site{
+		border-radius: 10px 10px 10px 10px;
+		width: 70%;
+		height: 50%;
+		border: solid;
+	}
+
+
+	@media(min-width: 280px) and (max-width: 800px) /* determinando um minimo e max de tamanho pras imagens paara mobile*/ 
+	{
+		.imagens-site{
+		border-radius: 20px 20px 50px 20px;
+		width: 90%;
+		height: 70%;
+
+	}
+	}
+	#compras{
+		background-color:rgba(255,215,0,0.75); /*esse 0.75 é a transparencia*/
+		width:150px;
+		height: 100px;
+		right:0; /*a posicao da div em relacao ao lado direito sera 0, ou seja colada ao lado direito*/
+		position: fixed;
+		text-align: center;;
+		margin-top: 25rem;
+		border-radius: 20px;
+		padding-top: 30px;
+		border: solid;
+	}
+	@media(min-width: 280px) and (max-width: 820px){
+		#compras{
+		background-color:rgba(255,215,0,0.75); /*esse 0.75 é a transparencia*/
+		width:150px;
+		height: 100px;
+		right:0; /*a posicao da div em relacao ao lado direito sera 0, ou seja colada ao lado direito*/
+		position: fixed;
+		text-align: center;;
+		margin-top: 20rem;
+		border-radius: 20px;
+		padding-top: 6px;
+		border: solid;
+	}
+
+	}
+
+
+
+	#grid-conteudo{
+		background-color: #fff;
+		padding-top: 20rem;
+
+	}
+	.grid{
+	display: grid;	/*display é o espaço dentro*/
+	grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+
+
+	/*1fr 1fr 1fr fr significa fragmentar, ele vai verificar o espaco e fragmentar o conteudo de acordo como ele acha que caiba*/
+	grid-gap: 2px; /*espaço entre as colunas*/
+	max-width: 1200px; 
+	margin: 0 auto;
+	}
+
+	.grid div { /*tudo que for div dentro do grid*/ 
+		background-color: #ffffff;
+		text-align: center;
+		padding: 1rem;
+
+	}
+
+	#formulario{
+		background-color:#dcdcdc;
+	}
+
+	input{
+
+	border: solid;
+	padding: 4px;
+	border-radius: 10px;
+	font-size:1.8rem;
+	}
+	#mensagem {
+	border: solid;
+	border-radius: 10px;
+	font-size:1.6rem;
+	}
+
+	#btn-limpar{
+		background-color:#ff0000;
+		color:#ffffff;
+		text-align: center;
+		padding: 5px;
+		font-weight: bold;
+
+	}
+
+	#btn-enviar{
+		background-color:#00FF7F;
+		color:#ffffff;
+		text-align: center;
+		padding: 5px;
+		font-weight: bold;
+
+	}
+	#btn-compras{
+		background: rgb(40,125,50);
+		color: #fff;
+		font-weight: bold;
+		padding: 5px;
+		border-radius: 5px;
+		border: solid #fff;
+
+	}
+   nav{
+   	text-align: right;
+   	font-size: 1.6rem;
+   	word-spacing: 30px; /*colocar espaco entre os textos*/
+   	margin-right: 5%;
+   	padding-bottom: 2px;
+   }
+
+   a{ /*formatacao dos links*/
+   	text-decoration: none;
+   	color: #ffff00;
+   	font-weight: bold; /*negrito*/
+   	text-shadow: 2px 2px 3px #000000;
+   	background-color: rgb(255,0,0);
+   	padding: 5px;
+   	border-radius: 10px;
+   }
+
+   a:hover{ /*configurar o link quando o mouse esta em cima(PC)*/
+	color: #fff;
+   	text-shadow: 2px 2px 3px #000000;
+   	background-color: rgb(255,0,0);
+   	padding: 5px;
+   	border-radius: 10px;
+   	border:solid #ffff00;
+   }
+
+.links{
+color: #fff;
+}

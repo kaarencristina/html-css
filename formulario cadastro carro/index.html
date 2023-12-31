@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h3>Cadastre seu veiculo</h3>
+		</div>
+		<div class="form-container">
+			<div class="form-header">
+				<p>Cadastro</p>
+			</div>
+			<div class="form-body">
+				<h1>Venda seu veículo</h1>
+				<p>Descreva as características</p>
+				<form>
+					<div class="box-input">
+						<label for="title">Título do anúncio:
+							<span class="required-field">*</span></label>
+						<input type="text" name="title" id="titleanuncio" class="block" placeholder="Digite aqui" minlength="1" maxlength="30" required> <!-- minlength="1" maxlength="30" quantidade de caracteres -->
+						<input type="submit" class="btn-submit" value="cadastrar">
+					</div>
+					<div class="box-input">
+						<label>Preço: <span class="required-field">*</span></label>
+						<input type="number" name="price" id="price" class="block" required>
+
+					</div>
+					<div class="box-input">
+						<label for="description">Descrição<span class="required-field">*</span></label>
+						<textarea id="description" name="description" class="block" cols="30" rows="5" placeholder="Digite" required></textarea
+						>
+					</div><br>
+					<div class="box-input">
+						<label for="unique-owner">Único dono?<span class="required-field">*</span></label>
+						<select id="unique-owner" name="unique-owner" required>
+							<option value="">Selecione...</option>
+							<option value="1">Sim</option>
+							<option value="0">Não</option>
+
+						</select><br>
+						<div class="box-input">
+						<label for="brand">Marca:
+							<span class="required-field">*</span></label>
+						<input type="text" name="brand" id="brand" class="block" placeholder="Digite marca aqui" required>
+					</div>	
+						<div class="box-input"><label>Carro de fumante?
+							<span class="required-field">*</span></label>
+							<input type="radio" name="smoke" id="fumante"><label class="oi">sim</label>
+							<input type="radio" name="smoke" id="nfumante"><label class="oi">não</label>
+						</div>
+						</div>
+						<div class="box-input">
+							<p id="img">Envie imagens<span class="required-field">*</span></p>
+							<input type="file" name="images" id="images" required>
+
+
+
+						</div>
+
+
+						<input type="submit" class="btn-submit" value="cadastrar">
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
