@@ -1,0 +1,311 @@
+
+ 	*{ /* asterisco serve para aplicar pra todos */
+ 	margin: 0;
+ 	border: 0;
+ 	padding:0;
+
+ 	}
+
+ 	html{
+ 		font-family: arial;
+ 		font-size: 62.5%;  /*esse tamanho seria 10px*/
+ 		scroll-behavior:smooth; /*comportamento do scroll mouse*/
+ 	}
+
+ 	body{
+ 		background-color: #dcdcdc;
+ 		width: 100%;
+ 		height: 100%;
+ 	}
+
+	header{
+		background: #d3d3d3;
+		color: #ffff;
+
+		font-size: 1.8rem;
+		position: fixed;
+		width: 100%;
+		z-index: 1;	
+	}
+	@media(min-width:280px) and (max-width: 1080px){
+		header{
+		background: #d3d3d3;
+		color: #ffff;
+		font-size: 1.6rem;
+		text-align: center;
+		position: fixed;
+		width: 100%;
+		z-index: 1;	
+		
+	}
+
+
+	}
+
+
+
+	footer{
+		background: linear-gradient(to right,#fff,#d3d3d3);
+		color: #fff;
+		font-size: 1.8rem;
+		padding: 1rem;
+		text-align: center;
+		text-shadow: 1px 1px 1px #000;
+		
+	}
+
+	.conteudo{
+		font-size: 1.6rem;
+		background-color: #FFF;
+		padding: 1.5rem;
+		text-align: justify;
+		margin: 0 auto;  /*adapta as margens automaticamente*/
+		max-width:1024px; /*largura max de que o conteudo ocupa a tela*/
+
+	}
+
+	.container{
+		font-size: 1.6rem;
+		background-color: #FFF;
+		padding: 1.5rem;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 15rem;  /*adapta as margens automaticamente*/
+		max-width:80%; /*largura max de que o conteudo ocupa a tela*/
+		padding-top: 3rem;
+		border-radius: 20px;
+
+	}
+
+	@media(min-width:300px) and (max-width: 1080px){
+
+	.container{
+			font-size: 1.6rem;
+			background-color: #FFF;
+			padding: 1.5rem;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 9rem;  /*adapta as margens automaticamente*/
+			max-width:80%; /*largura max de que o conteudo ocupa a tela*/
+			padding-top: 3rem;
+			border-radius: 20px;
+
+	}
+
+
+	}
+
+	h1{
+		font-size:2rem;
+		text-align: center;
+		text-shadow: 1px 1px 1px #000000;
+		color: rgb(255,0,0);
+
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	figure{
+	text-align: center;
+	}
+	.imagens-site{
+		border-radius: 3px;
+		width: 5%;
+		height: 5%;
+		
+	}
+	
+@media(min-width: 280px) and (max-width: 1080px) /* determinando um minimo e max de tamanho pras imagens paara mobile*/ 
+	{
+		.imagens-site{
+		border-radius: 3px;
+		width: 90%;
+		height: 70%;
+
+	}
+	}
+	#logo-topo{
+		width:3%;
+		height:3%;
+		padding-left: 20px;
+	}
+
+
+	@media(min-width: 280px) and (max-width: 1080px) /* determinando um minimo e max de tamanho pras imagens paara mobile*/ 
+	{
+		#logo-topo{
+		width:8%;
+		height:8%;
+		padding-right: 380px;
+		  	
+		}
+
+	}
+
+
+	#escritor{
+   	border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+   }
+
+@media(min-width: 280px) and (max-width: 1080px){
+#escritor{
+   	border-radius: 50%;
+    width: 100px;
+    height: 100px;
+   	
+
+   }
+
+}
+
+
+	
+	
+	@media(min-width: 280px) and (max-width: 1080px){
+		#compras{
+		background-color:rgba(255,215,0,0.75); /*esse 0.75 é a transparencia*/
+		width:150px;
+		height: 100px;
+		right:0; /*a posicao da div em relacao ao lado direito sera 0, ou seja colada ao lado direito*/
+		position: fixed;
+		text-align: center;;
+		margin-top: 20rem;
+		border-radius: 20px;
+		padding-top: 6px;
+		border: solid;
+	}
+
+	}
+
+	h3,h4{
+		text-align: center;
+		color: #fff;
+		font-size: 15px;
+		text-shadow: 3px 3px 3px #000;
+
+
+	} 
+   nav{
+   
+   	text-align: center;
+   	padding-left: 50px;
+   	padding-right: 20px;
+   	font-size: 1.6rem;
+   	word-spacing: 20px; /*colocar espaco entre os textos*/
+   	margin-top: 10px;
+   }
+	@media(min-width: 280px) and (max-width: 1080px){
+
+	nav{
+	   	
+	   	font-size: 1.6rem;
+	   	word-spacing: 12px; /*colocar espaco entre os links*/
+	   	margin-top: 10px;
+	   	
+	   }
+	}
+
+   a{ /*formatacao dos links*/
+   	text-decoration: none;
+   	color: #000000;
+   	font-weight: bold; /*negrito*/
+
+   	
+   }
+
+   a:hover{ /*configurar o link quando o mouse esta em cima(PC)*/
+	color: #7ac4ff ;
+
+   
+   }
+
+   p{
+   	font-size: 15px;
+   	text-align: start;
+   	
+   }
+
+
+ #imagemwhats{
+ 	width: 40px;
+ 	height: 40px;
+
+
+ }
+
+
+  #whats{
+  	
+  	z-index: 1;
+  	right: 10px;
+
+  	position: fixed;
+  	text-align: center;
+  	margin-top: 20rem;
+  	width: 90px;
+  	height: 90px;
+  }
+
+@media(min-width: 300px) and (max-width: 1080px){
+	div.video{
+		position: relative;
+		padding-bottom:50%;
+		
+
+	}
+
+	div.video > iframe{
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		width: 95%;
+		height: 95%;
+	}
+
+
+}
+#logolinkedin{
+	width: 1.5% ;
+	height: 1.5% ;
+}
+
+@media(min-width: 300px) and (max-width: 1080px){
+
+#logolinkedin{
+	width: 6% ;
+	height: 6% ;
+}
+	}
+
+#grid-conteudo{
+		
+		padding-top: 3rem;
+
+	}
+	.grid{
+	display: grid;	/*display é o espaço dentro*/
+	
+
+
+	/*1fr 1fr 1fr fr significa fragmentar, ele vai verificar o espaco e fragmentar o conteudo de acordo como ele acha que caiba*/
+	grid-gap: 3px; /*espaço entre as colunas*/
+	max-width: 1200px; 
+	margin: 0 auto;
+	}
+
+	.grid div { /*tudo que for div dentro do grid*/ 
+		background-color: #dedede;
+		text-align: center;
+		padding: 3rem;
+
+
+	}
+
+	button{
+		padding: 4px;
+	}
