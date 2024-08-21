@@ -152,3 +152,36 @@ nav a:hover{
     margin-bottom: 1rem;
     padding: 8px;
 }
+
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+
+#geral section{
+    flex: 2;
+}
+
+#geral aside{
+    flex: 1;
+}
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title p{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.widget_title_bar{
+    width: 50px;
+    height: 3px;
+    background-color: #055018;
+    margin-top: 10px;
+
+}
